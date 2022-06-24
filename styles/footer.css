@@ -1,0 +1,57 @@
+.footer-wrapper{
+    background-color: #11122b;
+    color: #cbcbcb;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    margin-top: -5px;
+}
+
+.footer-wrapper > .banner-image img{
+    width: 180px;
+    height: 100%;
+    /* filter: brightness(50%); */
+    filter: opacity(50%);
+}
+
+.footer-wrapper > .contact-hours-wrapper span{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1em;
+    letter-spacing: 2px;
+}
+
+.footer-wrapper > .contact-hours-wrapper > .hours{
+    font-size: 0.8em;
+    color: #cea135;
+    text-transform: uppercase;
+}
+
+.footer-wrapper > .links-wrapper {
+    width: 400px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-wrapper > .socials{
+    width: 300px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-wrapper > .socials a{
+    font-size: 1.5em;
+    transition: 0.5s;
+    color: #cbcbcb;
+}
+.footer-wrapper > .socials a:hover{
+    color: #cea135;
+}
+.copyright{
+    color: #858585;
+    font-size: 0.7em;
+    margin-bottom: 42px;
+}

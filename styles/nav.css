@@ -1,0 +1,134 @@
+/* common nav styles */
+.navigation-wrapper{
+    height: 190px;
+    background-color: #11122b;
+    color: #cbcbcb;
+    display: Flex;
+    /* Felxbox container 
+    each div within navigation wrapper became a flex box item*/
+    justify-content: space-between;
+    align-items: center;
+    /* justify content was what allowed the items to be evenly spaced no matter the width of the page
+    the align items is referring to the vertical alignment */
+    padding: 20px 40px;
+    /* numbers go clockwise, 1st is padding from top, 2nd padding from right
+    adding some space from all sides (space around would make it so that the space in between items would also be the space around it...) 
+    you could also do them one by one padding-right etc */
+}
+
+
+/* LEFT COLUMN */
+.navigation-wrapper > .left-column{
+    display: flex;
+    align-items: center;
+}
+/* just making the phone and hours be center vertically */
+
+.navigation-wrapper > .left-column > .icon{
+    margin-right: 15px;
+}
+/* adding a margin between the phone icon and the text */
+
+.icon i {
+    color: #cbcbcb;
+    font-size: 2em;
+    /* em just says double to og size, so this makes the icon bigger */
+}
+
+.navigation-wrapper > .left-column > .contact-hours-wrapper{
+    /* greater than symbol just to tell the program to find the parent child of left column */
+    display: grid;
+    grid-template-columns: 1fr;
+    /* making 1 column for the grid of the contact hours */
+    grid-gap: 3px;
+}
+/* this makes it so that the hours and phone # are pput on separate lines with a gap in between */
+
+.navigation-wrapper > .left-column >.contact-hours-wrapper > .hours{
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: #858585;
+    font-size: 0.8em;
+}
+
+
+
+/* RIGHT COLUMN */
+.navigation-wrapper > .right-column{
+    display: flex;
+    align-items: center;
+}
+
+.navigation-wrapper > .right-column > .icon > a > i{
+    margin-left: 15px;
+    transition: 0.5s;
+}
+
+.navigation-wrapper > .right-column > .icon > a > i:hover {
+    color: #cea135;
+}
+
+.navigation-wrapper > .right-column > .address-wrapper {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    text-align: right;
+}
+
+.navigation-wrapper > .right-column > .address-wrapper > a{
+    text-decoration: none;
+    color: #858585;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: 0.5s;
+}
+
+.navigation-wrapper > .right-column > .address-wrapper > a:hover{
+    color: #cea135;
+}
+
+
+
+/* CENTER COLUMN */
+.navigation-wrapper > .center-column{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 500px;
+    grid-gap: 10px;
+}
+/* this is making a grid for the center so that we get the logo and the links separate */
+
+.navigation-wrapper > .center-column > .banner-image{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: -20px;
+}
+/* this centers the logo within the grid */
+
+.links-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* just centering the links and having them evenly spaced */
+
+.links-wrapper > .nav-link{
+    width: 70px;
+    text-align: center;
+}
+/* for the hovering animation, making it so that each link has its own box o 70 px to spread in
+and that the link should be in the center of those boxes */
+
+.links-wrapper > .nav-link a{
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: #cbcbcb;
+    text-decoration: none;
+    transition: 0.5s;
+    /* transition for animations */
+}
+/* chaning fonts of links and making a smooth transition for hover animation */
+
+.links-wrapper > .nav-link > a:hover{
+    color: #cea135;
+    letter-spacing: 2px;
+}
+/* a:hover specifies that this is how the links will change when we hover
+so then we change the color and the spacing */

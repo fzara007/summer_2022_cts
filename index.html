@@ -1,0 +1,255 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- ^may need something different for foreign languages -->
+    <title>HTML and CSS Notes</title>
+    <!-- ^what the reader sees at the tab --> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ^allows the website to adjust with the tab --> 
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto+Slab&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+    <!-- font from google -->
+    
+    <script src="https://kit.fontawesome.com/f1fc3fcec1.js" crossorigin="anonymous"></script>
+    <!-- now we can use their icons in our website, anything that starts with <i is from this -->
+
+    <link rel="stylesheet" href="styles/common.css">
+    <!-- href is asking about what file to access to get the code from 
+    stuff that all of the pages need-->
+    
+    <link rel="stylesheet" href="styles/nav.css">
+    <!-- stuff specifically for the navigation bar -->
+
+    <link rel="stylesheet" href="styles/homepage.css">
+
+    <link rel="stylesheet" href="styles/footer.css">
+
+    <!--
+        you can change code later
+        for example in our styles sheet:
+        h2{
+            color: blue;
+            text-decoration: underline;
+        }
+        h2{
+            color: goldenrod;
+            text-decoration: underline;
+        }
+        it will make it so that our colors will all be golden rod now
+        our next line will be overriding line 11 as well
+        not all of it, just specifically the color which is now different
+
+        also things will be overriden in the order it is called here
+        if you have the embedded style under the imports, that will override them
+    
+        <link rel="stylesheet" href="styles2.css">
+    -->
+
+    
+</head>
+<body>
+    <div class="navigation-wrapper">
+        <!--  div just helps divide things into separate elements to make it easier to select and work with-->
+        
+            <!-- the class helps specify things when using csss -->
+            <div class="left-column">
+                <div class="icon">
+                    <i class="fa-solid fa-phone-volume"></i>
+                </div>
+                <div class="contact-hours-wrapper"> 
+                    <div class="phone">
+                        801-708-4647
+                    </div> 
+                    <div class="hours">
+                        12AM to 9PM
+                    </div>
+                </div>
+            </div>
+           
+        <div class="center-column">
+            <div class="banner-image">
+                <img src="images/logos/decamp-fantastic-fries-logo-white.png" alt="Logo" width="216px" height="100%">
+            </div>
+            <div class="links-wrapper">
+                <!--creating links and other pages to the website-->
+            
+                <div class="nav-link">
+                    <a href="index.html">Home</a>  
+                </div>
+
+                <div class="nav-link">
+                    <a href="about.html">About Us</a>    
+                </div>
+
+                <div class="nav-link">
+                    <a href="menu.html">Menu</a>
+                </div>
+
+                <div class="nav-link">
+                    <a href="contact.html">Contact</a>
+                </div>
+                
+                <!--so now we have linked these all to the other pages-->
+                <!--
+                    <a href="pages/demo.html">Demo</a>
+                    basically without the pages/ it tries to find the demo 
+                    in the wrong place, so you need to provide that pathway
+                -->
+
+                <!--<a href="https://instagram.com/fiona_j_zara" target="blank">Instagram</a>
+                outside link!!, give the full url
+                the target blank part will make it so that the link will open in a new tab-->
+
+                
+        
+            </div>
+        </div>
+
+        <div class="right-column">
+            <div class="address-wrapper">
+                <!-- 
+                    difference between id and class:
+                    if you have something multiple times on the page
+                    use the class,
+                    if it will only be there once, use the id
+                -->
+                <a href="contact.html">
+                    123 E AnyStreet
+                    <br>
+                    <!-- breaks into two lines -->
+                    Salt Lake City, UT
+                </a>
+                <!-- making it a link -->
+            </div>
+            <div class="icon">
+                <a href="contact.html">
+                    <i class="fa-solid fa-location-dot"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="hero-section">
+        <div class="top-heading">
+            <h1>HTML Styled Fries</h1>
+        </div>
+
+        <div class="bottom-heading">
+            <h3>Coding Fuel</h3>
+        </div>
+    </div>
+
+    <div class="features-section">
+        <div class="columns-wrapper">
+            <div class="column">
+                <div>
+                    <i class="fa-solid fa-truck-monster"></i>
+                </div>
+
+                <p>We Deliver!</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <!-- create by typing p>lorem8 -->
+            </div>
+
+            <div class="column">
+                
+                <div>
+                    <i class="fa-solid fa-wifi"></i>
+                </div>
+                
+                <p>You can code from here!</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <!-- create by typing p>lorem8 -->
+
+            </div>
+
+            <div class="column">
+                <div>
+                    <i class="fa-solid fa-chart-column"></i>
+                </div>
+
+                <p>100+ types of fries!</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <!-- create by typing p>lorem8 -->
+
+            </div>
+
+        </div>
+    </div>
+
+    <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3032.6482300679227!2d-111.8691863851334!3d40.527265656834246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87528796af77ba79%3A0x617573885814a5b9!2sSauce%20Boss%20Southern%20Kitchen!5e0!3m2!1sen!2sus!4v1655752220501!5m2!1sen!2sus" width= "100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!-- basically it pulls in the entire website in creating a map on our website... we also changed width to a 100% so that itll cover the entire width -->
+    </div>
+
+    <div class="footer-wrapper">
+        <div class="banner-image">
+            <img src="images/logos/decamp-fantastic-fries-logo-white.png" alt="Logo">
+        </div>
+        <div class="contact-hours-wrapper">
+            <span class="phone">
+                801 708 4647
+            </span>
+            <span class="hours">
+                12AM to 9PM
+            </span>
+        </div>
+        <div class="links-wrapper">
+            <div class="nav-link">
+                <a href="index.html">Home</a>  
+            </div>
+
+            <div class="nav-link">
+                <a href="about.html">About Us</a>    
+            </div>
+
+            <div class="nav-link">
+                <a href="menu.html">Menu</a>
+            </div>
+
+            <div class="nav-link">
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="socials">
+            <a href="https://instagram.com/fiona_j_zara" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+        <div class="copyright">
+            &copy; 2022 DevCamp &#124 All rights reserved
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- 3 ways to use CSS, inline, embed into tag, imported
+
+    inline: add directly to element (style color part)
+<h2 style="color: blue;">Start of HTML</h2>
+in the body
+
+embedding: adding this to the head
+<style>
+    h2{
+        color: blue;
+        text-decoration: underline;
+    }
+</style>
+this will then ensure that each of these headings will 
+always have this formatting
+
+importing by having an external style sheet:
+an effect you want on your website for every single page
+something like a header or a navigation
+sooo it would be something you would have to copy and paste
+into the code for every page of the website 
+instead though, you can have an external style sheet and you
+simply import that code in (line 11)
+-->
