@@ -1,0 +1,23 @@
+/* Page container styles */
+.page-container{
+    display: flex;
+    justify-content: center;
+}
+
+.page-container > .content-wrapper{
+    width: 1000px;
+}
+
+.page-container > .content-wrapper> #chef{
+    width: 350px;
+    margin: 25px;
+    float: left;
+    /* in other words, the text will float to the left of it */
+    margin: 23px 40px 20px 0px;
+    border: 2px solid #cea135;
+}
+
+.page-container > .content-wrapper p{
+    line-height: 30px;
+    letter-spacing: 1px;
+}

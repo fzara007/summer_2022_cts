@@ -1,0 +1,51 @@
+/* skewed header styles */
+.skewed-header{
+    position: relative;
+    /* need to make this relative for the absolute property of bg image to work */
+    height: 400px;
+    overflow: hidden;
+}
+
+.skewed-header > .header-bg{
+    position: absolute;
+    /* allows the other content to sit on top */
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 67%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transform: skewY(-6deg);
+    /* skews image */
+    transform-origin: top left ;
+    /* makes the skew on the top left  */
+    filter: brightness(50%);
+}
+
+.skewed-header > .skewed-header-wrapper{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    /* width will take up 100% of window space */
+}
+
+.skewed-header > .skewed-header-wrapper > .skewed-header-content{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skewed-header > .skewed-header-wrapper > .skewed-header-content > .heading-wrapper{
+    background-color: #cea135;
+    color: #11122b;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    /* to curve edges but only at bottom */
+    width: 175px;
+    padding: 10px;
+    text-align: center;
+}
