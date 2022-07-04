@@ -18,6 +18,9 @@
     <link rel="stylesheet" href="styles/skewed-header.css">
     <link rel="stylesheet" href="styles/page-container.css">
     <link rel="stylesheet" href="styles/helpers.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/buttons.css">
 </head>
 <body>
     <div class="skewed-header">
@@ -84,7 +87,32 @@
                 </div>
             </div>
 
-            
+            <div class="form">
+                <div class="form-group">
+                    <input type="text" id="fullName" placeholder="Your name">
+                    <!-- allows the user to input text -->
+                    <label for="fullName">Your name</label>
+                    <!-- 
+                        will show up under the textbox after the placeholder is gone 
+                        the for part connects to the id of the input
+                    -->
+                </div>
+
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Your email">
+                    <!-- email type to give hints about @ and stuff -->
+                    <label for="email">Your email</label>
+                </div>
+
+                <div class="form-group">
+                    <textarea name="message" id="message" placeholder="Message"></textarea>
+                    <label for="message">Message</label>
+                </div>
+
+                <div class="centered-btn-wrapper">
+                    <button type="submit" class="btn">Send</button>
+                </div>
+            </div>
         </div>
     </div>
 
