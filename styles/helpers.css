@@ -21,3 +21,9 @@ and also changing it so that a blue box doesn't appear when we are about to clic
     content: " \f0c1";
     /* font-weight: 900; */
 }
+/* 
+alrighty, psuedo selectors will add stuff before or after whatcha select
+so here I selected the headings in the anchor links and added an icon
+when using the unicode (/f0c1) you have to import the font family
+Font Awesome Version Free, and also the font weight can't be anything but 900
+ */
