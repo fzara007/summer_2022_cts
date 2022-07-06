@@ -8,3 +8,13 @@
     outline: none;
     transition: 0.3s;
 }
+
+.btn:active{
+    /* active is refering to when the user presses on the button */
+    box-shadow: 6px 6px 17px -1px rgba(0,0,0,0.45);
+}
+
+.centered-btn-wrapper{
+    display: flex;
+    justify-content: center;
+}

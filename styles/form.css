@@ -49,8 +49,23 @@
     display: block;
     transition: all 0.3s; 
     color: #cea135;
+    visibility: hidden;
+    opacity: 0;
+    /* so these two are going to hide the labels */
 }
 
-form input::-webkit-input-placeholder, form textarea::-webkit-input-placeholder{
+.form input:focus + label, .form textarea:focus + label{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(1rem);
+
+}
+
+.form input::placeholder, .form textarea::placeholder{
+    /* so uh, through all of that, we just selected the placeholder of the text area and inputs */
     color: #11122b;
+}
+
+.form input:focus::placeholder, .form textarea:focus::placeholder{
+    color: transparent;
 }

@@ -20,3 +20,7 @@
     text-align: right;
     margin: 20px 0px 20px 0px;
 }
+
+.company-metadata-sidebar-wrapper > .company-details-wrapper i{
+    color: #cea135;
+}
